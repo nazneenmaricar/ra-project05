@@ -1,0 +1,477 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font__main;
+}
+
+/*COLOUR VARIABLE*/
+$grey-border-color: #a3a2a2;
+$green-color: #008C83;
+$white: white;
+
+/*FONT VARIABLE and ASSIGN*/
+// $font_merri-b: "Merriweather-Bold";
+// $font_merri-bi: "Merriweather-BoldItalic";
+// $font_merri-i: "Merriweather-Italic";
+// $font_novec-db: "Novecentosanswide-DemiBold";
+$font_merri-l: "$font_merri-l";
+$font_novec-n: "Novecentosanswide-Normal";
+$font-size-08: 0.8em;
+$font-size-1: 1em;
+$font-weight-300: 300;
+
+/*PADDING MARGIN WIDTH AND HEIGHT VARIABLES*/
+
+$padding-10: 10px;
+$padding-20: 20px;
+$padding-30: 30px;
+$padding-top-20: 20px;
+$padding-right-10: 10px;
+$padding-5-10: 5px 10px;
+
+$margin-auto: auto;
+$margin-5: 5px;
+$margin-50: 50px;
+$margin-bottom-10: 10px;
+
+$width-25: 25%;
+$width-50: 50%;
+$width-80: 80%;
+$width-90: 90%;
+$width-100: 100%;
+
+$height-auto: auto;
+$height-30: 30vh;
+
+/*FLEX BOX*/
+.flex {display: flex;}
+.just-cont-cent {justify-content: center;}
+.just-cont-between {justify-content: space-between;}
+.just-space-around {justify-content: space-around;}
+.dir-col {flex-direction: column;}
+.dir-row{ flex-direction: row;}
+.flex-wrap {flex-wrap: wrap;}
+.flex-grow-1 {flex-grow: 1;}
+.align-item-center {align-items: center}
+.align-self-end {align-self: flex-end;}
+.align-item-end { align-items: flex-end;}
+.row-wrap {flex-flow: row wrap;}
+.align-self-start {align-self: flex-start;}
+
+
+/*GLOBAL*/
+.text-center {text-align: center;}
+.main {margin: $margin-auto;
+       width: $width-80;}
+.width-50 {width: $width-50;}
+.grey-line {border-bottom: dotted 1px grey;
+            width: $width-100;
+            margin-bottom: $margin-bottom-10;}
+.padding-top-20 { padding-top: 20px;}
+.padding-30 {padding: 30px;}
+.padding-bottom-20 {padding-bottom: 20px;}
+.text-upper {text-transform: uppercase;}
+.border-bottom {border-bottom: solid 1px #d1d4d6;}
+.width {width: 20px;}
+.margin-auto {margin: auto;}
+.display-none {display: none;}
+/* Front page */
+
+.top-nav {display: flex;
+          justify-content: space-between;
+          padding: 10px 30px;
+          height: 45px;}
+
+.logo-img {height: 100%;}
+
+.green-logo div:nth-of-type(2){
+  display: none;}
+
+.white-logo div:nth-of-type(1){
+  display: none;}
+
+.top-nav ul {display: flex;
+         list-style-type: none;}
+
+.top-nav ul li {padding-right: 15px;
+            font-family: "Novecentosanswide-Normal";
+            font-size: 1em;
+            text-decoration: none;}
+
+/* Shop Stuff*/
+
+.shop-stuff {
+            h2 {font-weight: $font-weight-300;
+                padding: $padding-20;}
+            }
+
+.stuff-cat {padding: $padding-10;
+            border: solid;
+            border-width: 5px 1px 1px 1px;
+            border-color: $grey-border-color;
+            margin: $margin-5;
+            width: $width-25;
+
+            img {width: 12vh;
+                 padding: $padding-10;}
+
+            p {padding: 10px 0px;}
+
+          .shop-button {background-color: $green-color;
+                        border: none;
+                        color: $white;
+                        font-size:$font-size-08;
+                        padding: $padding-5-10;
+                        margin-bottom: $margin-bottom-10;
+                        font-weight: $font-weight-300;}
+            }
+
+/* Inhabitent Journals */
+
+.journal {
+           h2 {font-weight: $font-weight-300;
+               font-size: 1.5em;
+               padding: $padding-20;}
+          }
+
+.entry {border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color:$grey-border-color;
+        width: 35%;
+        height: auto;
+        margin: $margin-5;}
+
+.entry-img {height: $height-30;
+            width: $width-100;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 3px solid $grey-border-color;}
+
+.entry-cont { padding-left: $padding-10;
+
+              p {font-family: $font_merri-l;
+                  font-size: 10px;
+                  padding: 10px 0px 5px 0px;}
+
+              h2 {
+                  color: $green-color;
+                  font-weight: bold;
+                  font-size: 20px;
+                  padding: 0px 0px 10px;}
+
+              .entry-button {border: 1px solid black;
+                             background-color: $white;
+                             color: black;
+                             font-size: $font-size-08;
+                             padding: $padding-5-10;
+                             margin-bottom: $margin-bottom-10;
+                             font-weight: $font-weight-300;}
+              }
+/* Home Adventure  */
+
+.adv { padding-bottom:  20px;
+        h2 {
+            font-weight: $font-weight-300;
+            font-size: 1.5em;
+            padding: $padding-20;
+            z-index: 1000;}
+      }
+
+.adv-cat1 {margin: $margin-5;
+           width: $width-100;}
+
+.height-log1 { height: 61.5vh;}
+.height-log2 {height: 30vh;}
+.margin-log1 {margin: 0px 5px 0px 0px;}
+.margin-log2 {margin: 0px 0px 5px 5px;}
+.margin-log3 {margin: 5px 5px 0px 5px;}
+.margin-log4 {margin: 5px 0px 0px 5px;}
+
+.adv-log {
+            // background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            padding: $padding-10; }
+
+.adv-text {font-family: $font_merri-l;
+           font-size:1.5em;
+           color: $white;}
+
+.adv-button {background: none;
+             border: 1px solid $white;
+             color: $white;
+             font-size:$font-size-08;
+             padding: $padding-5-10;
+             margin-bottom: $margin-bottom-10;}
+
+.more-adv-button {background-color: $green-color;
+                  color: $white;
+                  border: none;
+                  padding: $padding-5-10;
+                  margin-bottom: $margin-bottom-10;}
+
+.adv-button-more {margin: 20px 0px 0px 5px;
+            a {text-decoration: none;}
+          }
+
+
+/* Footer */
+
+.footer {padding: $padding-20;}
+
+.footer-info {padding: $padding-20;
+
+            p span {padding-right: 10px;
+                    color: $white;}
+          }
+.info:last-of-type{ border: 1px solid red;
+                        text-align: left;
+                        flex-grow: 1;
+                         }
+
+.info {
+        p {color: $white;
+            margin-bottom: 1rem;}
+
+         h2 {font-family: "Novecentosanswide-DemiBold";
+             color: #c97f31;
+             font-size: 1em;
+             padding-bottom: 10px;;}
+      }
+
+.text-white {color: $white;}
+
+ /*ARCHIVE PRODUCTS*/
+
+.prod {margin: $margin-50;
+
+        a{text-decoration: none;}
+
+        ul {list-style-type: none;
+            margin-left: 0px;
+            padding-left: 0px;
+            width: 30%;
+            margin: $margin-auto;
+            text-transform: uppercase;
+          }
+        li {padding: $padding-10;}
+}
+
+.each-prod {border: solid 1px grey;
+            width: 20%;
+            height: auto;
+            margin: $margin-5;
+
+              .prod-entry {width: $width-100;
+                           margin: $margin-auto;}
+            }
+
+.prod-img {width: $width-100;
+           height: 25vh;
+           border-bottom: 3px solid grey;}
+
+.padding-right-10px {padding-right: $padding-10;}
+
+
+.prod h1 {font-size: 1.5em;}
+
+.prod-content {
+                p {font-family: $font_merri-l;
+                   font-size: 0.8em;
+                   margin-bottom: 1rem;}
+               }
+
+/* TAXONMAY TYPE (PRODUCT TYPE ARCHIVE)*/
+
+.tax {margin: $margin-50;
+
+        h1 {font-size: 1.5em;
+            text-transform: uppercase;}
+
+        p {display: flex;
+          justify-content: center;
+          margin-bottom: 1rem;}
+      }
+
+.width-25 {width: $width-25;}
+
+.tax-entry {padding-top: $padding-top-20;
+            width: $width-90;
+            margin: $margin-auto;
+
+            .each-entry {border-style: solid;
+                         border-width: 1px 1px 1px 1px;
+                         border-color: $grey-border-color;
+                         width: $width-100;
+                         height: $height-auto;
+                         margin: $margin-5;}
+
+            .tax-img {width: $width-100;
+                      height: $height-30;
+                      border-bottom: 3px solid grey;}
+            }
+.padding-right-10px {padding-right: $padding-right-10;}
+
+.tax-content{
+              p {font-family: $font_merri-l;
+                 font-size: 0.8em;
+                 margin-bottom: 1rem;}
+             }
+
+/*SINGLE PRODUCT (TAXONOMY)*/
+
+.section {
+          padding: $padding-30;
+          width: $width-80;
+          margin: $margin-auto;
+
+          .img-info {padding-right: 20px;
+                      .image {height: 100%;
+                              width: $width-100;}
+                     }
+
+          .info {width: $width-50;
+                 padding-left: 20px;
+                }
+          }
+
+
+
+/*SINGLE JOURNAL and ARCHIVE JOURNAL*/
+
+.entry-content {width: 60%;
+								margin: $margin-auto;}
+
+.journal {padding-top: 30px;
+         margin-bottom: 20px;}
+
+.journal-img{
+             width: $width-100;
+             height: 60vh;
+             background-position: center;
+             background-size: cover;
+             background-repeat: no-repeat;
+
+              h1{font-size: 1.5em;
+                 padding: $padding-10;
+                 width: 75%;
+                 color: $white;
+                 background-color: $green-color;}
+
+              h2{font-size: 1em;
+                 line-height: 0.8em;
+                 padding: 10px 35px;
+                //  color: #008080;
+                 width: 70%;
+                 color: $white;
+                 background-color: $green-color;
+
+                 a:visited {color:white;
+                            text-decoration: none;}
+                  }
+             }
+.content p {font-size: 1em;}
+
+
+/* ARCHIVE ADVENTURE */
+
+.adv-main {width: $width-90;
+           margin: $margin-auto;}
+
+.adv-image {background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+           flex: 1 40%;
+           height: 60vh;
+           width: 45%;}
+
+.margin-5px {margin: $margin-5;}
+
+.adv-image{ padding: $padding-20;
+            h2{font-weight: $font-weight-300;
+               font-size: 2em;
+               color: $white;
+               padding-top: 20px;}
+           }
+
+/*SINGLE ADVENTURE*/
+
+.single-adv-main {width: 60%;
+                  margin: $margin-auto;}
+
+.adv-blog {
+            h2 {font-size: 2em;
+                margin: 30px 0px 0px;}
+            h4 {font-weight: $font-weight-300;
+                 margin: 10px 0px 20px;
+                 font-size: 1.2em;}
+            p { font-size: 1em;
+                line-height: 1.5em;
+                font-family: $font_merri-l;}
+          }
+
+/*ABOUT PAGE*/
+.about-main {margin: $margin-auto;
+             width: 90%;
+              h2 {display: flex;
+                  justify-content: center;}
+            }
+
+/*CONTACT FORM*/
+.contact-main {margin: $margin-auto;
+               width: 100%;
+
+              h2 { padding: 20px 0px;}}
+
+/*SEARCH FORM*/
+.padding-0 {padding: 0px;}
+
+.serach-h2{color: $green-color;
+    padding-top: $padding-top-20;}
+
+.search-button { border: 1px solid black;
+                 padding: $padding-5-10;
+                 text-decoration: none;}
+fieldset {padding: 0px;}
+
+// #search-form{
+//   transition: all 1s;
+// }
+// #search-nav{
+//   display: none;
+// }
+// .form-search{
+//   h1{
+//     color: $green-color;
+//   }
+//   .page-title{
+//     color: black;
+//   }
+// }
+/* ASIDE */
+.aside {
+        width: 40%;
+        border-left: 1px solid grey;
+        padding: 30px;
+
+          span {padding-right: 10px;
+                color: black;}
+
+          p {line-height: 1em;
+             font-size: 0.8em;}
+
+          h2 {line-height: 2em;
+              font-size: 1em;}
+
+          ul {list-style-type: none;
+               padding: 0px;
+               margin: 0px;}
+
+          ul li a {color: $green-color;
+                   text-decoration: none;}
+      }
